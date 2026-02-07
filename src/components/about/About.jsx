@@ -1,38 +1,28 @@
-import React, { Component } from 'react';
-import classes from './About.module.css';
-// import ScrollAnimation from 'react-animate-on-scroll';
-import 'animate.css/animate.min.css';
+import React from "react";
+import classes from "./About.module.css";
+import "animate.css/animate.min.css";
 
-class About extends Component {
-  render() {
-    return (
-      <div className={classes.box} id='about'>
-        {/* <ScrollAnimation
-          offset={0}
-          animateIn='fadeInLeft'
-          duration={2.4}
-          animateOnce={true}
-          initiallyVisible={true}
-        > */}
-        <span className={classes.head}>ABOUT ME</span>
-        <h2 className={classes.heading}>Who Am I?</h2>
-        <div className={classes.About}>
-          <p>
-            Hi! My name is <b>SACHIN MITTAL</b>. I am a passionate developer having experience in{' '}
-            <b>Frontend development</b> & <b>Mobile App development </b>  complemented by backend expertise and I am much interested in developing new things
-            which excite me a lot. :)
-          </p>
-          <p className={classes.br}>
-            I love exploring new technologies and being a practitioner, I like to stay on top of
-            latest trends. I try to leave every line of code I write more readable, accessible, and
-            modular. My problem-solving mindset and active GitHub profile showcase my commitment to
-            innovative and collaborative coding.
-          </p>
-        </div>
-        {/* </ScrollAnimation> */}
+export default function About() {
+  return (
+    <div className={classes.box} id="about">
+      <span className={classes.head}>ABOUT ME</span>
+      <h2 className={classes.heading}>Who Am I?</h2>
+      <div className={classes.About}>
+        <p>
+          Hi! My name is <b>Sahan Randika</b>. I am a passionate software
+          engineer with expertise in <b>Full Stack Development</b>,{" "}
+          <b>Mobile App Development</b>, and <b>Cloud Technologies</b>. I love
+          building innovative solutions that solve real-world problems and
+          create exceptional user experiences.
+        </p>
+        <p className={classes.br}>
+          I'm constantly exploring new technologies and staying ahead of
+          industry trends. My approach focuses on writing clean, maintainable
+          code and creating scalable architectures. With a strong foundation in
+          both frontend and backend development, I bring ideas to life through
+          elegant code and thoughtful design.
+        </p>
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default About;

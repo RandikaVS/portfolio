@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 
 export default function CarouselImage() {
   return (
-    <div id='start'>
+    <div id="start">
       <Carousel
         dynamicHeight
         infiniteLoop={true}
@@ -24,51 +24,73 @@ export default function CarouselImage() {
         showStatus={false}
         showThumbs={false}
       >
-        <div>
-          <img className={classes.image} src={Hello} alt='myImage' />
+        <div className={classes.carouselSlide}>
+          <img className={classes.image} src={Hello} alt="myImage" />
+          <div className={classes.overlay}></div>
           <div className={classes.h1}>
-            I'm Sachin
-            <motion.h1
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className={classes.heroTitle}>Hi, I'm Sahan Randika</h1>
+              <p className={classes.heroSubtitle}>
+                Software Engineer | Full Stack Developer
+              </p>
+            </motion.div>
+            
+          </div>
+          <div className={classes.cv}>
+          <motion.h1
               initial={{ scale: 1 }}
-              animate={{ scale: [1, 1.2, 1] }} // Define the scale values for the bouncing effect
-              transition={{ duration: 3.3, repeat: Infinity }} // Set the duration and repeat
-              whileHover={{
-                scale: 1.1
-              }}
+              animate={{ scale: [1, 1.05, 1] }}
+              transition={{ duration: 3.3, repeat: Infinity }}
+              whileHover={{ scale: 1.1 }}
+              className={classes.ctaButton}
             >
               <a
-                href='https://drive.google.com/file/d/1X-i5HA9SzKKnNHCFcupGxq_RFu7fwcil/view?usp=drive_link'
-                rel='opener noreferrer'
-                target='_blank'
+                href="https://drive.google.com/file/d/1X-i5HA9SzKKnNHCFcupGxq_RFu7fwcil/view?usp=drive_link"
+                rel="opener noreferrer"
+                target="_blank"
+                className={classes.ctaLink}
               >
-                VIEW CV <FaArrowCircleDown />
+                VIEW CV <FaArrowCircleDown className={classes.ctaIcon} />
               </a>
             </motion.h1>
-          </div>
+            </div>
         </div>
-        <div>
-          <img className={classes.image} src={Pencil} alt='myImage' />
+        {/* <div className={classes.carouselSlide}>
+          <img className={classes.image} src={Pencil} alt="myImage" />
+          <div className={classes.overlay}></div>
           <div className={classes.h2}>
-            <h1> I love building</h1>
-            <h1>THINGS!!</h1>
-            <a
-              href='https://github.com/mittalsam98?tab=repositories&q=&type=public&language=&sort='
-              rel='opener noreferrer'
-              target='_blank'
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
             >
-              VIEW Web PROJECTS <GoProject />
-            </a>
-            <div className={classes.secondButton}>
+              <h1 className={classes.buildTitle}>I love building</h1>
+              <h1 className={classes.buildEmphasis}>AMAZING THINGS!!</h1>
+            </motion.div>
+            <div className={classes.buttonGroup}>
               <a
-                href='https://github.com/mittalsam98?tab=repositories&q=&type=&language=dart&sort='
-                rel='opener noreferrer'
-                target='_blank'
+                href="https://github.com/mittalsam98?tab=repositories&q=&type=public&language=&sort="
+                rel="opener noreferrer"
+                target="_blank"
+                className={classes.projectButton}
               >
-                VIEW ANDROID PROJECTS <GoProject />
+                VIEW WEB PROJECTS <GoProject />
+              </a>
+              <a
+                href="https://github.com/mittalsam98?tab=repositories&q=&type=&language=dart&sort="
+                rel="opener noreferrer"
+                target="_blank"
+                className={`${classes.projectButton} ${classes.secondButton}`}
+              >
+                VIEW MOBILE PROJECTS <GoProject />
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );

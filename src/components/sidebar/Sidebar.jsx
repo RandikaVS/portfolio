@@ -3,7 +3,7 @@ import './Sidebar.css';
 import { HashLink as Link } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 
-import logo from '../images/sam.png';
+import logo from '../images/sahan.jpg';
 import github from '../images/github.png';
 import instagram from '../images/instagram.png';
 import twitter from '../images/twitterx.png';
@@ -54,12 +54,10 @@ export default function Sidebar() {
 
   return (
     <div className='sidebar'>
-      <div className='topHashtag'># programmer_life</div>
-      <div className='topHashtag'># hello_world</div>
-      <div className='topHashtag'># coding</div>
+      
       <h1>
         <Link smooth to='/#start' className='h1_links'>
-          Sachin Mittal
+          Sahan Randika
         </Link>
       </h1>
       <motion.div
@@ -68,14 +66,16 @@ export default function Sidebar() {
       >
         <img src={logo} className='my-img' />
       </motion.div>
-      <p style={{ color: 'black', fontWeight: 'bold' }} className='gmail'>
+      <div className='topHashtag'>Software Engineer</div>
+      <div className='topHashtag2'>BSc (Hons) in ICT (sp. Software Engineering)</div>
+      <p style={{ fontWeight: 'bold' }} className='gmail'>
         <a
           href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJftvBffjPmxWxvfHWRHWnhTbpQgPxBxvkcnPpFpFqbhrXMCHXSJTsCXCVLsQzgRcVLpnPL'
           rel='opener noreferrer'
           target='_blank'
           className='fa fa-envelope'
         ></a>
-        &nbsp;mittalsam98@gmail.com
+        &nbsp;sahanrandika28@gmail.com
       </p>
 
       <ul className='sidebar-nav'>
@@ -116,24 +116,19 @@ export default function Sidebar() {
           ))}
         </motion.ul>
       </div>
-      <div
-        style={{
-          color: 'black',
-          fontWeight: 'bold',
-          paddingTop: '20%'
-        }}
-        className='tagtop'
-      >
-        Made with <a href='#' className='fa fa-heart heart'></a> by me.
-      </div>
-      <button
-        onClick={() => {
-          window.open('https://github.com/mittalsam98/react-portfolio', '_blank');
-        }}
-        className='templateTextBtn'
-      >
-        Use this template
-      </button>
+      <div className='topHashtag'># MERN</div>
+      <div className='topHashtag'># PPRF</div>
+      <div className='topHashtag'># ReactJs</div>
+      <div className='topHashtag'># NodeJs</div>
+      <div className='topHashtag'># Python</div>
+      <div className='topHashtag'># Flask</div>
+      <div className='topHashtag'># FastAPI</div>
+      <div className='topHashtag'># GCP</div>
+      <div className='topHashtag'># ReactNative</div>
+      <div className='topHashtag'># AI-ML</div>
+      <div className='topHashtag'># PostgreSql</div>
+      <div className='topHashtag'># PgAdmin</div>
+      <div className='topHashtag'># MySql</div>
     </div>
   );
 }
