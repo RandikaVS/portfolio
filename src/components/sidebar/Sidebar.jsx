@@ -32,16 +32,8 @@ export default function Sidebar() {
       href: 'https://www.linkedin.com/in/sachin-mittal-476174158?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoRhF2EUsQJ%2BygJpLEZb%2FFA%3D%3D'
     },
     {
-      component: twitter,
-      href: 'https://twitter.com/Sachin_Mittal98'
-    },
-    {
-      component: instagram,
-      href: 'https://www.instagram.com/decent_sachin.mittal'
-    },
-    {
       component: gmail,
-      href: 'mailto:mittalsam98@gmail.com'
+      href: 'mailto:sahanrandika28@gmail.com'
     }
   ];
   const item = {
@@ -67,16 +59,37 @@ export default function Sidebar() {
         <img src={logo} className='my-img' />
       </motion.div>
       <div className='topHashtag'>Software Engineer</div>
-      <div className='topHashtag2'>BSc (Hons) in ICT (sp. Software Engineering)</div>
-      <p style={{ fontWeight: 'bold' }} className='gmail'>
+      <div className='topHashtag2'>BSc (Hons) in Information & Communication Technology <br/>(sp. Software Engineering)</div>
+
+      <div className="social-row">
         <a
-          href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJftvBffjPmxWxvfHWRHWnhTbpQgPxBxvkcnPpFpFqbhrXMCHXSJTsCXCVLsQzgRcVLpnPL'
-          rel='opener noreferrer'
-          target='_blank'
-          className='fa fa-envelope'
-        ></a>
-        &nbsp;sahanrandika28@gmail.com
-      </p>
+          href="https://www.linkedin.com/in/sahan-randika-a920a0211/"
+          target="_blank"
+          rel="noreferrer"
+          className="social-item"
+        >
+          <img src={linkedin} className="contact-icon-img" alt="linkedin" />
+          <span>LinkedIn</span>
+        </a>
+
+        <a
+          href="https://github.com/RandikaVS"
+          target="_blank"
+          rel="noreferrer"
+          className="social-item"
+        >
+          <img style={{ backgroundColor: 'white', borderRadius: '50%' }} src={github} className="contact-icon-img" alt="github" />
+          <span>GitHub</span>
+        </a>
+
+        <a
+          href="mailto:sahanrandika28@gmail.com"
+          className="social-item"
+        >
+          <img src={gmail} className="contact-icon-img" alt="gmail" />
+          <span>Gmail</span>
+        </a>
+      </div>
 
       <ul className='sidebar-nav'>
         <li className='sidebar-nav-items'>
@@ -101,7 +114,7 @@ export default function Sidebar() {
         </li>
       </ul>
 
-      <div>
+      {/* <div>
         <motion.ul className='sidebar-nav' variants={container} initial='hidden' animate='visible'>
           {iconList.map((val, index) => (
             <motion.li key={index} variants={item}>
@@ -115,7 +128,8 @@ export default function Sidebar() {
             </motion.li>
           ))}
         </motion.ul>
-      </div>
+      </div> */}
+
       <div className='topHashtag'># MERN</div>
       <div className='topHashtag'># PPRF</div>
       <div className='topHashtag'># ReactJs</div>

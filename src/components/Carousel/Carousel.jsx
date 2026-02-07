@@ -49,7 +49,7 @@ export default function CarouselImage() {
               className={classes.ctaButton}
             >
               <a
-                href="https://drive.google.com/file/d/1X-i5HA9SzKKnNHCFcupGxq_RFu7fwcil/view?usp=drive_link"
+                href="https://drive.google.com/file/d/13PFTNHWDo1tv2Exe3cjzQQkESbjxR3_N/view?usp=sharing"
                 rel="opener noreferrer"
                 target="_blank"
                 className={classes.ctaLink}
