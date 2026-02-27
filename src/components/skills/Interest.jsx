@@ -26,7 +26,7 @@ export default function Interest() {
         <div className={classes.web}>
           <h3>APP Develpoment</h3>
           <p>
-            I have knowledge of flutter development and have experience in building android and IOS
+            I have knowledge of React Native development and have experience in building IOS
             applications. I also have live projects published on Google Play Store.
           </p>
         </div>

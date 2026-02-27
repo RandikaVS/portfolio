@@ -7,7 +7,6 @@ import classes from './Projects.module.css';
 import bookheap from '../images/bookheap.png';
 import chess from '../images/chess.png';
 import shopping from '../images/shopping-app.png';
-import travel from '../images/travel-log.png';
 import definition from '../images/definition.png';
 import memes from '../images/memes.png';
 import superhero from '../images/superhero.png';
@@ -21,104 +20,61 @@ import frontenddev from '../images/frontenddev.png';
 import solanaaid from '../images/solanaaid.png';
 import jumpstart from '../images/jumpstart.png';
 
+import edfoci from '../img/edfoci.png';
+import sanasa from '../img/sanasa.png';
+import bizassist from '../img/bizassist.png';
+import travel from '../img/travel.png';
+import airecipe from '../img/airecipe.png';
+
 // Web projects
 const webItem = [
   {
-    link: 'https://www.frontenddev.site/',
-    title: 'Frontend Dev',
-    techStack: 'Useful repo for most common frontend challenges',
-    desc: 'Technology used: React Js, Mantine UI, Context API',
-    image: frontenddev,
+    link: 'https://dev.edfoci.com/',
+    title: 'Edfoci Student Management System',
+    techStack: 'Tech Stack: React Js, Flask Python, PostgreSQL, Socket.io',
+    desc: 'Edfoci is a student management system for schools and colleges. It has features like attendance management, online classes, online exams, and much more.',
+    image: edfoci,
     color: '#E5E483',
-    githubLink: 'https://github.com/mittalsam98/frontenddev'
+    githubLink: 'https://github.com/RandikaVS/Edfoci-chat-server'
   },
   {
-    link: 'https://www.profilee.info/',
-    title: 'Profilee - An OS link in bio',
-    techStack: 'Tech Stack: Next JS, Tailwind, Typescript, Prisma, AWS S3',
-    desc: 'Profilee is an open source profile link bio page builder',
-    image: profilee,
+    link: 'https://sanasa-web-service-783407895613.us-west2.run.app/auth/jwt/login?returnTo=%2Fdashboard%2Fquatation%2Flist',
+    title: 'Sanasa Bank Insurance Management System',
+    techStack: 'Tech Stack: React Js, Node Js, Express, MongoDB, DCP, Docker, Github Actions',
+    desc: 'Insurance management system for Sanasa bank. It has features like policy management, claim management, document share and much more.',
+    image: sanasa,
     color: '#0FFFFF',
-    githubLink: 'https://github.com/mittalsam98/profilee'
+    githubLink: 'https://github.com/RandikaVS'
   },
   {
-    link: 'https://www.saasjumpstart.live/',
-    title: 'Sass Boilerplate',
+    link: '#',
+    title: 'Biz Assist Saas Product',
     techStack:
-      'Technology used: Typescript, Nextjs, Prisma, Tailwind CSS, AWS S3, React Drag and Drop, Zod',
-    desc: 'Next.js boilerplate setup for the repetitive work. It comes with authentication with email verification, stripe payment integration, customizable components, email preview, and much more.',
-    image: jumpstart,
-    color: '#D2E0FB'
-    // githubLink: 'https://github.com/mittalsam98'
+      'Tech Stack: Next.js, FastAPI, PostgreSQL, Docker, Github Actions, Webhooks',
+    desc: 'A SaaS product for small businesses to manage their customers, appointments, and payments. It has features like customer management, appointment scheduling, payment management, and much more.',
+    image: bizassist,
+    color: '#D2E0FB',
+    githubLink: 'https://github.com/RandikaVS/BizAssist'
   },
   {
-    link: 'https://chess-web-online.netlify.app/',
-    title: 'Realtime Online Chess',
-    techStack: 'Tech Stack- ReactJs, NodeJS, Express, Socket.io.',
-    desc: 'Play real time chess with your friends online by sharing a link.',
-    image: chess,
+    link: 'https://dees-international-web-service-prod-872504844378.us-west2.run.app/',
+    title: 'Travel Mate',
+    techStack: 'Tech Stack: React Js, Flask Python, PostgreSQL, Socket.io, Tailwind CSS',
+    desc: 'A travel log application tourism company can use to manage their customers and bookings. It has features like booking management, customer management, and much more.',
+    image: travel,
     color: '#d5ebda',
     githubLink:
-      'https://github.com/mittalsam98?tab=repositories&q=chess&type=&language=javascript&sort=stargazers'
+      'https://github.com/RandikaVS'
   },
   {
     link: 'https://solanaaid.now.sh/',
-    title: 'Solana Aid',
-    techStack: 'Tech Stack- Web3, React Js, Tailwind',
-    desc: 'Solana web tools',
-    image: solanaaid,
+    title: 'AI powered Recipe Finder',
+    techStack: 'Tech Stack- React Js, Tailwind, OpenAI API, Node Js, Express, MongoDB',
+    desc: 'AI powered recipe finder app that helps you find recipes based on ingredients you have. It uses OpenAI API to generate recipes based on the ingredients you provide.',
+    image: airecipe,
     color: '#f3e4f1',
-    githubLink: 'https://github.com/mittalsam98/solanaaid'
+    githubLink: 'https://github.com/RandikaVS/AI-Recipe-Generator'
   },
-  {
-    link: 'https://www.youtube.com/watch?v=Dlxz9RnltMA&ab_channel=SachinMittal',
-    title: 'E-Commerce app',
-    techStack: 'Tech Stack: Monorepo, Typescript, MERN',
-    desc: 'It is a e-commerce app built in a MERN stack using Monorepo. This is 100% typescript.',
-    image: monorepo,
-    color: '#FEA1A1',
-    githubLink: 'https://github.com/mittalsam98/E-commerce-app'
-  },
-  {
-    link: 'https://courses-portal.netlify.app/',
-    title: 'Course Selling App',
-    techStack: 'Tech Stack: React JS, Tailwind CSS, Node JS, MongoDB, Razorpay for payments',
-    desc: 'Separate User and Admin panels, User can purchase courses',
-    image: courseApp,
-    color: '#C1A4AA',
-    githubLink: 'https://github.com/mittalsam98/Course-Selling-App'
-  },
-
-  {
-    link: 'https://travel-log-frontend-two.vercel.app/',
-    title: 'Travel Log',
-    techStack: 'Tech Stack- MERN Stack, Mapbox',
-    desc: 'A full stack application to store / list places you have visited. You can log every visit on map.',
-    image: travel,
-    color: '#EEA47F',
-    githubLink:
-      'https://github.com/mittalsam98?tab=repositories&q=travel&type=&language=javascript&sort=stargazers'
-  },
-  {
-    link: 'https://chit-chat-gpt-app.vercel.app/',
-    title: 'ChatGPT clone',
-    techStack:
-      'Tech Stack: Next.js 13, Tailwind CSS, Prisma, ZOD for validation, Recoil for state managements, TypeScript, OpenAI',
-    desc: 'Chat GPT clone with signup and signin, previous chat save functionality',
-    image: chatGPT,
-    color: '#FFA6C9',
-    githubLink: 'https://github.com/mittalsam98/chat-gpt-clone'
-  },
-  {
-    link: 'https://bookheap-app.netlify.app/',
-    title: 'Online Book Store',
-    techStack: 'Tech Stack: MERN Stack',
-    desc: 'It is a book selling web app built in a MERN stack . You can sell books by uploading images and can also see what others are selling.',
-    image: bookheap,
-    color: '#f3e4f1',
-    githubLink:
-      'https://github.com/mittalsam98?tab=repositories&q=bookheap&type=&language=javascript&sort=stargazers'
-  }
 ];
 
 const androidAppItems = [

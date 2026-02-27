@@ -35,33 +35,35 @@ class Education extends Component {
                       <MdWork />
                     </div>
                     <div className={classes.label}>
-                      <h2>Experience</h2>
+                      <h2>Professional Experience</h2>
+
                       <div className={classes.paraWithSubheading}>
-                        <div className={classes.subHeading}> - Unacademy Group (11/2024 - Present)</div>
+                        <div className={classes.subHeading}>
+                          - Software Engineer (Associate) | Infinity Innovators (Dec 2024 – Present)
+                        </div>
                         <div className={classes.points}>
                           <div className={classes.description}>
-                            Quickly onboarded to ongoing projects, gaining expertise in the
-                            company’s tech stack and understanding the product architecture.
+                            Building scalable web applications using React, Node.js, and Python Flask.
                           </div>
                           <div className={classes.description}>
-                            Contributed to socket chat feature enhancements and bug fixes, ensuring
-                            timely delivery of sprint objectives.
+                            Developed secure REST APIs with JWT authentication and role-based access control.
+                          </div>
+                          <div className={classes.description}>
+                            Worked with Google Cloud, CI/CD pipelines, and real-time systems using Socket.io.
                           </div>
                         </div>
                       </div>
+
                       <div className={classes.paraWithSubheading}>
-                      <div className={classes.subHeading}>- Springworks (7/2021 - 10/2024) </div>
+                        <div className={classes.subHeading}>
+                          - Software Engineer (Intern → Trainee) | Infinity Innovators (Jun 2023 – Dec 2024)
+                        </div>
                         <div className={classes.points}>
                           <div className={classes.description}>
-                            Developed multiple core features, improving platform engagement by 20%,
-                            using React and server-caching queries.{' '}
+                            Developed reusable React components improving maintainability and delivery speed.
                           </div>
                           <div className={classes.description}>
-                            Led multiple end-to-end projects (Springverify, SpringverifyDigital,
-                            Ex-Emp), with two projects built from the ground up, ensuring timely
-                            delivery and adherence to quality standards. Conducted detailed code
-                            reviews and provided suggestions for improvements. Integrated AI
-                            features to enhance UX.
+                            Implemented backend APIs and collaborated in Agile sprints for production systems.
                           </div>
                         </div>
                       </div>
@@ -75,20 +77,24 @@ class Education extends Component {
                       animateOnce={true}
                       initiallyVisible={true}
                     > */}
-                  <article className={classes.timeline_entry}>
-                    <div className={classes.timeline_icon}>
-                      <MdSchool />
-                    </div>
-                    <div className={classes.label}>
-                      <h2>
-                        Undergraduation at SLIET <span>2017-2021</span>
-                      </h2>
-                      <div className={classes.description}>
-                        I completed my undergraduation in CSE (Computer Science and Engineering)
-                        from <a href='http://sliet.ac.in/'>SLIET</a> with overall 82.71%.
-                      </div >
-                    </div>
-                  </article>
+                    <article className={classes.timeline_entry}>
+                      <div className={classes.timeline_icon}>
+                        <MdSchool />
+                      </div>
+                      <div className={classes.label}>
+                        <h2>
+                          BSc (Hons) Information Technology – Software Engineering
+                          <span> 2020 – 2024</span>
+                        </h2>
+                        <div className={classes.description}>
+                          Sri Lanka Institute of Information Technology (SLIIT) – WCGPA: 3.00/4.00
+                        </div>
+                        <div className={classes.description}>
+                          Final Year Research: ROS-based Multi-Robot Area Coverage using Spiral &
+                          Boustrophedon Path Planning Algorithms.
+                        </div>
+                      </div>
+                    </article>
                   {/* </ScrollAnimation> */}
                   {/* <ScrollAnimation
                       offset={0}
@@ -103,11 +109,11 @@ class Education extends Component {
                     </div>
                     <div className={classes.label}>
                       <h2>
-                        Higher Education <span>2014-2016</span>
+                        Higher Education <span>2015-2017</span>
                       </h2>
                       <div className={classes.description}>
-                        I have completed my higher education from HKIS with major subjects as
-                        Physics,Chemistry & Maths with 85% merit in CBSE board.{' '}
+                        I have completed my higher education from Mahinda Rajapakshe Collage with major subjects as
+                        Science for Technology, Engineerign Technology, Information Technology.{' '}
                       </div>
                     </div>
                   </article>
@@ -125,11 +131,16 @@ class Education extends Component {
                       <MdWork />
                     </div>
                     <div className={classes.label}>
-                      <h2>Internship</h2>
-                      <div className={classes.description}>Completed one month Internship in React Js with Internity Foundation</div>
-                    </div>
-                    <div className={classes.timeline_entry_inner}>
-                      <div className={classes.timeline_icon_3 || classes.color_none}></div>
+                      <h2>Key Projects</h2>
+                      <div className={classes.description}>
+                        Developed a Real-Time Chat Server using Node.js, Express, Socket.io, and MongoDB with JWT authentication.
+                      </div>
+                      <div className={classes.description}>
+                        Built AI Recipe Generator using React + OpenAI API deployed on Google Cloud.
+                      </div>
+                      <div className={classes.description}>
+                        Delivered Student Management and Assurance Quotation Systems for real clients.
+                      </div>
                     </div>
                   </article>
                   {/* </ScrollAnimation> */}

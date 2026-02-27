@@ -128,6 +128,7 @@
 .subHeading{
   font-size: 16px;
   font-weight: 600;
+  color: rgb(8, 8, 8);
 }
 .paraWithSubheading {
   margin-top: 0.8em;
@@ -143,6 +144,7 @@
 .description {
   font-size: 15px;
   margin-bottom:5px ;
+  color: rgb(8, 8, 8);
 }
 
 p > a {
