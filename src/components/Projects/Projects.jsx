@@ -23,6 +23,7 @@ import jumpstart from '../images/jumpstart.png';
 import edfoci from '../img/edfoci.png';
 import sanasa from '../img/sanasa.png';
 import bizassist from '../img/bizassist.png';
+import bizassist2 from '../img/bizassist2.png';
 import travel from '../img/travel.png';
 import airecipe from '../img/airecipe.png';
 
@@ -48,13 +49,13 @@ const webItem = [
   },
   {
     link: '#',
-    title: 'Biz Assist Saas Product',
+    title: 'Biz Assist - Business Management Tool + Whatsapp Bot',
     techStack:
       'Tech Stack: Next.js, FastAPI, PostgreSQL, Docker, Github Actions, Webhooks',
     desc: 'A SaaS product for small businesses to manage their customers, appointments, and payments. It has features like customer management, appointment scheduling, payment management, and much more.',
-    image: bizassist,
+    image: bizassist2,
     color: '#D2E0FB',
-    githubLink: 'https://github.com/RandikaVS/BizAssist'
+    githubLink: 'https://github.com/RandikaVS/Whatsapp-Chatbot'
   },
   {
     link: 'https://dees-international-web-service-prod-872504844378.us-west2.run.app/',
@@ -147,12 +148,14 @@ export default function Projects() {
           return getProjectCard(item);
         })}
       </ul>
+      {/*
       <h2 className={classes.heading}>ANDROID APP PROJECTS</h2>
       <ul className={classes.cards}>
         {androidAppItems.map((item) => {
           return getProjectCard(item);
         })}
       </ul>
+      */}
       {/* </ScrollAnimation> */}
     </div>
   );
