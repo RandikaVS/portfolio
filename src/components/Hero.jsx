@@ -41,7 +41,7 @@ export default function Hero() {
             custom={0}
           >
             <span className="kernel-badge__dot" />
-            SYSTEM.KERNEL :: {profile.kernelVersion} {profile.status}
+            SOFTWARE ENGINEER PROFILE :: {profile.profileVersion} {profile.status}
           </motion.div>
 
           <motion.h1
@@ -61,7 +61,7 @@ export default function Hero() {
             animate="show"
             custom={2}
           >
-            <span className="accent-magenta">&lt;Architect /&gt;</span> {profile.tagline}.{' '}
+            <span className="accent-magenta">&lt;Software Engineer /&gt;</span> {profile.tagline}.{' '}
             {profile.blurb}
           </motion.p>
 
@@ -74,7 +74,7 @@ export default function Hero() {
           >
             <HashLink smooth to="#projects" className="btn btn--primary">
               <FiTerminal />
-              <span>Initialize OS</span>
+              <span></span>
               <span className="btn__hint">sudo boot_gui</span>
             </HashLink>
             <a href={social.github} target="_blank" rel="noreferrer" className="btn btn--ghost">

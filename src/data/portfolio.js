@@ -9,38 +9,38 @@ export const profile = {
   tagline: 'Engineering Beyond Boundaries',
   blurb:
     'Specializing in scalable web platforms, real-time integrations, and clean cloud architecture.',
-  kernelVersion: 'v2.5.0',
+  profileVersion: 'v1.0.0',
   location: 'Sri Lanka · Remote',
   status: 'ONLINE',
   resumeUrl: '/resume.pdf', // drop a resume.pdf into /public, or change this link
   avatar: '/images/avatar.jpg', // drop your photo into /public/images/avatar.jpg
   // Modules shown scrolling under the hero
-  loadedModules: ['REACT', 'FLASK', 'PYTHON', 'POSTGRESQL', 'AZURE', 'DOCKER'],
+  loadedModules: ['REACT', 'FLASK', 'PYTHON', 'POSTGRESQL', 'GCP', 'DOCKER'],
 };
 
 export const social = {
-  github: 'https://github.com/your-handle',
-  githubUser: '@your-handle',
-  linkedin: 'https://www.linkedin.com/in/your-handle',
-  linkedinUser: 'in/your-handle',
-  email: 'you@example.com',
+  github: 'https://github.com/RandikaVS',
+  githubUser: '@RandikaVS',
+  linkedin: 'https://www.linkedin.com/in/sahan-randika-a920a0211/',
+  linkedinUser: 'in/sahan-randika-a920a0211/',
+  email: 'sahanrandika28@gmail.com',
 };
 
 // --- About terminal log lines -----------------------------------------------
 export const about = {
   card: {
     operator: 'SAHAN RANDIKA',
-    role: 'FULL_STACK_ARCHITECT',
+    role: 'FULL_STACK_ENGINEER',
     location: 'Remote',
     status: 'ONLINE',
   },
   log: [
     {
-      cmd: 'whoami',
+      cmd: 'About-Me',
       out: 'I am a software engineer focused on building scalable, maintainable web platforms. My work is grounded in clean code, performance, and continuous learning.',
     },
     {
-      cmd: 'cat mission.txt',
+      cmd: 'Experience',
       out: 'Turning complex product requirements into robust technical solutions. Currently building education platforms with React, Flask, PostgreSQL and Azure.',
     },
   ],
@@ -61,9 +61,8 @@ export const skills = [
   { name: 'Flask', color: 'green' },
   { name: 'Node.js', color: 'green' },
   { name: 'PostgreSQL', color: 'cyan' },
-  { name: 'Azure', color: 'cyan' },
+  { name: 'GCP', color: 'cyan' },
   { name: 'Docker', color: 'cyan' },
-  { name: 'Framer Motion', color: 'magenta' },
   { name: 'REST APIs', color: 'amber' },
   { name: 'Microsoft Graph', color: 'cyan' },
   { name: 'CI/CD', color: 'green' },
