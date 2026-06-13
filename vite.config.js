@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // If you deploy to GitHub Pages under a repo subpath, set this to '/<repo-name>/'.
   // For a custom domain or root deploy, keep it as '/'.
-  base: '/',
+  base: '/portfolio/',
 });
