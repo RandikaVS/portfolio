@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { FiTerminal, FiGithub, FiArrowRight } from 'react-icons/fi';
+import { FiTerminal, FiGithub, FiArrowRight, FiLinkedin } from 'react-icons/fi';
 import { HashLink } from 'react-router-hash-link';
 import { profile, social } from '../data/portfolio.js';
+import {FaArrowCircleUp} from 'react-icons/fa';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -41,7 +42,7 @@ export default function Hero() {
             custom={0}
           >
             <span className="kernel-badge__dot" />
-            SOFTWARE ENGINEER PROFILE :: {profile.profileVersion} {profile.status}
+            ENGINEER.PROFILE :: {profile.profileVersion} {profile.status}
           </motion.div>
 
           <motion.h1
@@ -72,14 +73,24 @@ export default function Hero() {
             animate="show"
             custom={3}
           >
-            <HashLink smooth to="#projects" className="btn btn--primary">
-              <FiTerminal />
-              <span></span>
-              <span className="btn__hint">sudo boot_gui</span>
-            </HashLink>
+            {/* <HashLink smooth to="#projects" className="btn btn--primary"> */}
+              <a
+                href={profile.resume}
+                rel="opener noreferrer"
+                target="_blank"
+                className="btn btn--primary">
+                <FiTerminal />
+                <span>View Resume</span>
+                <span className="btn__hint"><FaArrowCircleUp/></span>
+              </a>
+            {/* </HashLink> */}
             <a href={social.github} target="_blank" rel="noreferrer" className="btn btn--ghost">
               <FiGithub />
-              <span>Check out GitHub</span>
+              <span>GitHub</span>
+            </a>
+            <a href={social.linkedin} target="_blank" rel="noreferrer" className="btn btn--ghost">
+              <FiLinkedin />
+              <span>LinkedIn</span>
             </a>
           </motion.div>
 
@@ -138,9 +149,9 @@ export default function Hero() {
           </div>
 
           <div className="editor__footer">
-            <button className="editor__run">
+            <HashLink className="editor__run" to="#about">
               <FiArrowRight /> Run Profile
-            </button>
+            </HashLink>
             <HashLink smooth to="#projects" className="editor__view">
               View Projects
             </HashLink>

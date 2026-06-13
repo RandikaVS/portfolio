@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import { FiUser } from 'react-icons/fi';
-import { about } from '../data/portfolio.js';
+import { about, profile } from '../data/portfolio.js';
 import SectionHeading from './SectionHeading.jsx';
 
 export default function About() {
   return (
     <section id="about" className="section">
-      <SectionHeading prefix="#" title="About.system" />
+      <SectionHeading prefix="#" title="About" />
 
       <div className="about__grid">
         {/* avatar / profile card */}
@@ -28,11 +28,11 @@ export default function About() {
           >
             <div className="profile-card__photo">
               {/* To use a photo: import { profile } from '../data/portfolio.js'
-                  then replace this block with:
-                  <img src={profile.avatar} alt={profile.name} /> */}
-              <div className="profile-card__placeholder">
+                  then replace this block with: */}
+                  <img src={profile.profileImg} alt={profile.name} />
+              {/* <div className="profile-card__placeholder">
                 <FiUser />
-              </div>
+              </div> */}
               <span className="profile-card__scan" />
             </div>
             <dl className="profile-card__meta">
@@ -43,6 +43,10 @@ export default function About() {
               <div>
                 <dt>ROLE</dt>
                 <dd>{about.card.role}</dd>
+              </div>
+              <div>
+                <dt>EDUCATION</dt>
+                <dd>{about.education}</dd>
               </div>
               <div>
                 <dt>LOCATION</dt>

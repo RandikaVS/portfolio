@@ -5,7 +5,7 @@ import SectionHeading from './SectionHeading.jsx';
 export default function Experience() {
   return (
     <section id="experience" className="section">
-      <SectionHeading command="git log --stat --oneline" />
+      <SectionHeading command="Experience" />
 
       <div className="gitlog">
         {experience.map((job, i) => (

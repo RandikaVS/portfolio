@@ -1,0 +1,103 @@
+/* ── Skill sphere ─────────────────────────────────────────────── */
+
+
+.skills__sphere {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 2rem auto 0;
+  aspect-ratio: 1 / 1;          /* square stage = round sphere */
+  display: grid;
+  place-items: center;
+}
+
+/* Soft dark "planet" + glow behind the icons (approximates the
+   wireframe globe in the reference without needing an asset). */
+.skills__glow {
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 42%,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(20, 20, 26, 0.55) 42%,
+      rgba(8, 8, 12, 0.85) 70%);
+  box-shadow:
+    inset 0 0 80px rgba(0, 0, 0, 0.6),
+    0 0 90px rgba(255, 120, 60, 0.10);   /* faint ember rim — retune to your accent */
+  pointer-events: none;
+}
+
+.skills__stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  touch-action: none;            /* let pointer drive rotation on touch */
+  cursor: grab;
+}
+
+/* Each chip is absolutely centred; JS moves it via transform. */
+.skills__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0;
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  will-change: transform, opacity, filter;
+  transition: filter 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.skills__icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+  transition: transform 0.2s ease;
+}
+
+.skills__item:hover .skills__icon,
+.skills__item:focus-visible .skills__icon {
+  transform: scale(1.12);
+}
+
+.skills__dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
+}
+
+.skills__label {
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: rgba(220, 220, 230, 0.85);
+  white-space: nowrap;
+}
+
+.skills__item:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 6px;
+  border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+  .skills__sphere { max-width: 420px; }
+  .skills__icon { width: 36px; height: 36px; }
+  .skills__label { font-size: 0.65rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills__item { transition: none; }
+}

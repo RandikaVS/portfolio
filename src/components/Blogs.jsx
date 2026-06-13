@@ -8,7 +8,7 @@ export default function Blogs() {
 
   return (
     <section id="blogs" className="section">
-      <SectionHeading command="ls -la ~/blogs" />
+      <SectionHeading command="Blogs" />
 
       {!hasBlogs ? (
         <motion.div

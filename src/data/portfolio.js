@@ -2,6 +2,22 @@
 //  portfolio.js  —  Single source of truth for all site content.
 //  Edit the values here and the whole site updates. No need to touch JSX.
 // ============================================================================
+import {
+    FaReact,
+    FaJsSquare,
+    FaPython,
+    FaFlask,
+    FaNodeJs,
+    FaDatabase,
+    FaGoogle,
+    FaDocker,
+    FaServer,
+    FaMicrosoft,
+    FaCogs,
+    FaGitAlt,
+    FaHtml5,
+    FaCss3Alt
+} from 'react-icons/fa';
 
 export const profile = {
   name: 'Sahan Randika',
@@ -15,7 +31,9 @@ export const profile = {
   resumeUrl: '/resume.pdf', // drop a resume.pdf into /public, or change this link
   avatar: '/images/avatar.jpg', // drop your photo into /public/images/avatar.jpg
   // Modules shown scrolling under the hero
-  loadedModules: ['REACT', 'FLASK', 'PYTHON', 'POSTGRESQL', 'GCP', 'DOCKER'],
+  loadedModules: ['REACT', 'FLASK', 'PYTHON', 'Node.js', 'POSTGRESQL', 'GCP', 'DOCKER', 'CI/CD'],
+  resume: 'https://drive.google.com/file/d/13PFTNHWDo1tv2Exe3cjzQQkESbjxR3_N/view?usp=sharing',
+  profileImg: './images/sahan.jpg',
 };
 
 export const social = {
@@ -30,7 +48,7 @@ export const social = {
 export const about = {
   card: {
     operator: 'SAHAN RANDIKA',
-    role: 'FULL_STACK_ENGINEER',
+    role: 'FULL STACK ENGINEER',
     location: 'Remote',
     status: 'ONLINE',
   },
@@ -49,26 +67,27 @@ export const about = {
     { label: 'PROJECTS', value: '15+', unit: 'DEP' },
     { label: 'CAFFEINE', value: '∞', unit: 'ml' },
   ],
+  education: 'Bachelor Degree',
 };
 
 // --- Skills (grouped) -------------------------------------------------------
 // `color` keys map to CSS accent variables: cyan | green | amber | magenta | red
 export const skills = [
-  { name: 'React', color: 'cyan' },
-  { name: 'JavaScript', color: 'amber' },
-  { name: 'TypeScript', color: 'cyan' },
-  { name: 'Python', color: 'green' },
-  { name: 'Flask', color: 'green' },
-  { name: 'Node.js', color: 'green' },
-  { name: 'PostgreSQL', color: 'cyan' },
-  { name: 'GCP', color: 'cyan' },
-  { name: 'Docker', color: 'cyan' },
-  { name: 'REST APIs', color: 'amber' },
-  { name: 'Microsoft Graph', color: 'cyan' },
-  { name: 'CI/CD', color: 'green' },
-  { name: 'Git', color: 'red' },
-  { name: 'HTML5', color: 'amber' },
-  { name: 'CSS3', color: 'cyan' },
+  { name: 'React', color: 'cyan', icon: FaReact },
+  { name: 'JavaScript', color: 'amber', icon: FaJsSquare },
+  { name: 'TypeScript', color: 'cyan', icon: FaJsSquare },
+  { name: 'Python', color: 'green', icon: FaPython },
+  { name: 'Flask', color: 'green', icon: FaFlask },
+  { name: 'Node.js', color: 'green', icon: FaNodeJs },
+  { name: 'PostgreSQL', color: 'cyan', icon: FaDatabase },
+  { name: 'GCP', color: 'cyan', icon: FaGoogle },
+  { name: 'Docker', color: 'cyan', icon: FaDocker },
+  { name: 'REST APIs', color: 'amber', icon: FaServer },
+  { name: 'Microsoft Graph', color: 'cyan', icon: FaMicrosoft },
+  { name: 'CI/CD', color: 'green', icon: FaCogs },
+  { name: 'Git', color: 'red', icon: FaGitAlt },
+  { name: 'HTML5', color: 'amber', icon: FaHtml5 },
+  { name: 'CSS3', color: 'cyan', icon: FaCss3Alt },
 ];
 
 // --- Experience (rendered as a git log) -------------------------------------
@@ -76,39 +95,52 @@ export const experience = [
   {
     hash: 'a1b2ca2',
     head: true,
-    company: 'EdFoci',
-    period: '2024 — Present',
-    title: 'Full Stack Engineer @ EdFoci',
+    company: 'Infinity Innovators (PVT) Ltd.',
+    period: '2023-06-18 — 2023-12-18',
+    title: 'Software Engineer (intern) @ Infinity Innovators',
     description:
-      'Building an education platform end to end — React frontend, Flask APIs, PostgreSQL, and Azure infrastructure with GitOps-style database migrations.',
-    stack: ['React', 'Flask', 'PostgreSQL', 'Azure'],
+      'Gained hands-on experience in full-stack development using React, Node.js, Python, and Flask. Contributed to the design and implementation of scalable web applications, enhancing my skills in both frontend and backend technologies.',
+    stack: ['React', 'Flask', 'PostgreSQL', 'Python'],
     insertions: 412,
     deletions: 89,
     files: 4,
   },
   {
-    hash: 'a1b2ca1',
-    head: false,
-    company: 'Previous Role',
-    period: '2022 — 2024',
-    title: 'Software Engineer @ Previous Role',
+    hash: 'a1b2ca2',
+    head: true,
+    company: 'Infinity Innovators (PVT) Ltd.',
+    period: '2023-12-18 — 2024-12-18',
+    title: 'Software Engineer (trainee) @ Infinity Innovators',
     description:
-      'Developed and maintained responsive web applications and internal tools across multiple client projects.',
-    stack: ['React', 'Node.js', 'REST', 'Docker'],
-    insertions: 245,
-    deletions: 12,
-    files: 4,
+      'Acquired experience with technologies: React, NodeJS, Python, Flask. Collaborated with a team of professionals in software development and maintenance Engaged indocumentation efforts to maintain clear and comprehensive project records.',
+    stack: ['React', 'Flask', 'PostgreSQL', 'Python', 'Socket.IO'],
+    insertions: 1700,
+    deletions: 245,
+    files: 15,
+  },
+  {
+    hash: 'a1b2ca2',
+    head: true,
+    company: 'Infinity Innovators (PVT) Ltd.',
+    period: '2024-12-18 — Present',
+    title: 'Software Engineer (associate) @ Infinity Innovators',
+    description:
+      'Acquired experience with technologies: React, NodeJS, Python, Flask. Collaborated with a team of professionals in software development and maintenance Engaged indocumentation efforts to maintain clear and comprehensive project records.',
+    stack: ['React', 'Flask', 'PostgreSQL', 'Python', 'Socket.IO', ' React Native'],
+    insertions: 3207,
+    deletions: 986,
+    files: 21,
   },
 ];
 
 // --- Projects (GitHub-repo styled cards) ------------------------------------
 export const projects = [
   {
-    name: 'EdFoci Platform',
-    visibility: 'Private',
+    name: ' ROS Multi-Robot Indoor Path Planning',
+    visibility: 'Public',
     description:
-      'Education platform with student management, Microsoft Teams meeting creation via Graph API, and multi-environment Azure deployments.',
-    stack: ['React', 'Flask', 'PostgreSQL', 'Azure'],
+      'Autonomous intelligent machines and systems (aims) category development. Fully automated multi-robot area coverage algorithms optimization using Linux-based Robotic Operating System (ROS). The technology used CMake, C++, Python, Gazebo, Rviz, etc. Spiral and Boustrophedon algorithm optimized for efficient coverage as well as multi-robot communication, area partitioning features in operation',
+    stack: ['C++', 'Python', 'ROS', 'Gazebo', 'Rviz'],
     language: 'Python',
     languageColor: '#3572A5',
     stars: 24,
@@ -118,12 +150,12 @@ export const projects = [
     pinned: true,
   },
   {
-    name: 'DB Migration Pipeline',
+    name: 'Edfoci Student Management System',
     visibility: 'Public',
     description:
-      'GitOps schema-migration workflow using Flyway on Azure PostgreSQL with Azure DevOps pipelines and Entra token auth — no stored passwords.',
-    stack: ['Flyway', 'Azure DevOps', 'PostgreSQL', 'YAML'],
-    language: 'Shell',
+      'Specialized in developing custom student management system using Azure devops, React, Python. Flask. The platform features student data management, studying meterial management, attendance, live-chat , lteachers management, and payment processing for a students semesters and teachers.',
+    stack: ['React', 'Flask', 'PostgreSQL', 'Python', 'Azure DevOps'],
+    language: 'JavaScript',
     languageColor: '#89e051',
     stars: 18,
     forks: 3,
@@ -132,13 +164,27 @@ export const projects = [
     pinned: true,
   },
   {
-    name: 'Teams Integration Service',
+    name: 'Real-Time Messaging Server',
     visibility: 'Public',
     description:
-      'Flask blueprint for app-only Microsoft Graph auth (client credentials) to create Teams online meetings programmatically.',
-    stack: ['Flask', 'MSAL', 'Graph API', 'Python'],
-    language: 'Python',
-    languageColor: '#3572A5',
+      'This project is server-side development for a real-time chatting system as a backend template for any application that can be used as a chat server. The Technology uses NodeJs, Socket.io, Express, MongoDB, and Socket.io serving real-time chat features for every user without delaying or refreshing the screen. I applied this server to my current workplace application as well',
+    stack: ['Node.js', 'Socket.io', 'Express', 'MongoDB'],
+    language: 'JavaScript',
+    languageColor: '#f1e05a',
+    stars: 31,
+    forks: 9,
+    repo: '#',
+    demo: '#',
+    pinned: true,
+  },
+  {
+    name: 'Tenant Management System',
+    visibility: 'Public',
+    description:
+      'K-based tenant management system. it’s such a large application for a fully automated tenant management system for Tenants, Suppliers, and Admin. The technology used React, NodeJs, and MongoDB. GitLab pipeline automated live project',
+    stack: ['React', 'Node.js', 'GitLab', 'Express', 'MongoDB'],
+    language: 'JavaScript',
+    languageColor: '#f1e05a',
     stars: 31,
     forks: 9,
     repo: '#',
@@ -161,7 +207,7 @@ export const blogs = [
 // --- Contact ----------------------------------------------------------------
 export const contact = {
   status: 'available',
-  email: 'you@example.com',
+  email: 'sahanrandika28@gmail.com',
   location: 'Remote',
   responseTime: 'within 24h',
 };

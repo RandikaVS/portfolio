@@ -34,7 +34,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="section">
-      <SectionHeading command="./contact.exe" />
+      <SectionHeading command="Contact" />
 
       <div className="contact__grid">
         {/* JSON viewer */}

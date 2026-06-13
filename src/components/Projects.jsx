@@ -7,7 +7,7 @@ import SectionHeading from './SectionHeading.jsx';
 export default function Projects() {
   return (
     <section id="projects" className="section">
-      <SectionHeading command="ls -la ~/projects" />
+      <SectionHeading command="Projects" />
       <p className="section-hint">Pinned repositories</p>
 
       <div className="repos">
